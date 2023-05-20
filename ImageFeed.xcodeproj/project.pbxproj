@@ -13,6 +13,7 @@
 		C608D66E2A0D8FFF00D98C5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C608D66C2A0D8FFF00D98C5D /* Main.storyboard */; };
 		C608D6702A0D900000D98C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C608D66F2A0D900000D98C5D /* Assets.xcassets */; };
 		C608D6732A0D900000D98C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C608D6712A0D900000D98C5D /* LaunchScreen.storyboard */; };
+		C6A953F92A102362006470BD /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A953F82A102362006470BD /* ImagesListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C608D66F2A0D900000D98C5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C608D6722A0D900000D98C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C608D6742A0D900000D98C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A953F82A102362006470BD /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,22 @@
 			children = (
 				C608D6662A0D8FFF00D98C5D /* AppDelegate.swift */,
 				C608D6682A0D8FFF00D98C5D /* SceneDelegate.swift */,
-				C608D66A2A0D8FFF00D98C5D /* ImagesListViewController.swift */,
 				C608D66C2A0D8FFF00D98C5D /* Main.storyboard */,
+				C6A953FA2A10242C006470BD /* ImagesList */,
 				C608D66F2A0D900000D98C5D /* Assets.xcassets */,
 				C608D6712A0D900000D98C5D /* LaunchScreen.storyboard */,
 				C608D6742A0D900000D98C5D /* Info.plist */,
 			);
 			path = ImageFeed;
+			sourceTree = "<group>";
+		};
+		C6A953FA2A10242C006470BD /* ImagesList */ = {
+			isa = PBXGroup;
+			children = (
+				C608D66A2A0D8FFF00D98C5D /* ImagesListViewController.swift */,
+				C6A953F82A102362006470BD /* ImagesListCell.swift */,
+			);
+			path = ImagesList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C608D66B2A0D8FFF00D98C5D /* ImagesListViewController.swift in Sources */,
+				C6A953F92A102362006470BD /* ImagesListCell.swift in Sources */,
 				C608D6672A0D8FFF00D98C5D /* AppDelegate.swift in Sources */,
 				C608D6692A0D8FFF00D98C5D /* SceneDelegate.swift in Sources */,
 			);
