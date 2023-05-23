@@ -14,6 +14,7 @@
 		C608D6702A0D900000D98C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C608D66F2A0D900000D98C5D /* Assets.xcassets */; };
 		C608D6732A0D900000D98C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C608D6712A0D900000D98C5D /* LaunchScreen.storyboard */; };
 		C6A953F92A102362006470BD /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A953F82A102362006470BD /* ImagesListCell.swift */; };
+		C6B6739D2A1D6F03000F1001 /* ProfileNewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6739C2A1D6F03000F1001 /* ProfileNewConroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C608D6722A0D900000D98C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C608D6742A0D900000D98C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6A953F82A102362006470BD /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
+		C6B6739C2A1D6F03000F1001 /* ProfileNewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNewConroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C608D66A2A0D8FFF00D98C5D /* ImagesListViewController.swift */,
+				C6B6739C2A1D6F03000F1001 /* ProfileNewConroller.swift */,
 				C6A953F82A102362006470BD /* ImagesListCell.swift */,
 			);
 			path = ImagesList;
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B6739D2A1D6F03000F1001 /* ProfileNewConroller.swift in Sources */,
 				C608D66B2A0D8FFF00D98C5D /* ImagesListViewController.swift in Sources */,
 				C6A953F92A102362006470BD /* ImagesListCell.swift in Sources */,
 				C608D6672A0D8FFF00D98C5D /* AppDelegate.swift in Sources */,
