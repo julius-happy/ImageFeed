@@ -27,7 +27,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="2Hg-e7-lb3">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="2Hg-e7-lb3" userLabel="Cell Image">
                                                     <rect key="frame" x="16" y="4" width="358" height="216"/>
                                                     <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <userDefinedRuntimeAttributes>
@@ -64,6 +64,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.1333333333" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="cellImage" destination="2Hg-e7-lb3" id="UY9-za-Q1k"/>
+                                            <outlet property="dateLabel" destination="oni-ZR-iBR" id="QBA-5z-dgz"/>
+                                            <outlet property="likeButton" destination="QPe-K4-m8h" id="geE-3H-1Cs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
