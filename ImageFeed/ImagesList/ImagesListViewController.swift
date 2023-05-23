@@ -1,11 +1,6 @@
 
 import UIKit
 
-    //Do statusBar white
-    var preferredStatusBarStyle: UIStatusBarStyle {
-       return .lightContent
-   }
-
 class ImagesListViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
     
