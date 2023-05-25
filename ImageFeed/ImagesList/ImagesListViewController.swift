@@ -1,12 +1,13 @@
 
 import UIKit
 
+class ImagesListViewController: UIViewController {
+    
     //Do statusBar white
-    var preferredStatusBarStyle: UIStatusBarStyle {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
        return .lightContent
     }
-
-class ImagesListViewController: UIViewController {
+    
     @IBOutlet private var tableView: UITableView!
     
     private let photosName: [String] = Array(0..<20).map{"\($0)"}
