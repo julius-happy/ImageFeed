@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +21,7 @@
                                 <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.1019607843" green="0.1058823529" blue="0.1333333333" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImagesListCell" rowHeight="224" id="yjM-sf-0QR" customClass="ImagesListCell" customModule="ImageFeed">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImagesListCell" rowHeight="224" id="yjM-sf-0QR" customClass="ImagesListCell" customModule="ImageFeed">
                                         <rect key="frame" x="0.0" y="50" width="390" height="224"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yjM-sf-0QR" id="c94-iU-wFt">
@@ -37,30 +38,35 @@
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPe-K4-m8h" userLabel="Like Button">
-                                                    <rect key="frame" x="320" y="4" width="54" height="42"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="like_button_on"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 мая 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oni-ZR-iBR" userLabel="Date Label">
-                                                    <rect key="frame" x="23.999999999999993" y="191" width="96.333333333333314" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="24" y="196.33333333333334" width="76.666666666666671" height="15.666666666666657"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPe-K4-m8h" userLabel="Like Button">
+                                                    <rect key="frame" x="332" y="4" width="42" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="Umd-23-KO9"/>
+                                                        <constraint firstAttribute="width" constant="42" id="gBf-jb-GQd"/>
+                                                    </constraints>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="like_button_on"/>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="2Hg-e7-lb3" secondAttribute="trailing" constant="16" id="3f3-Hz-rbG"/>
                                                 <constraint firstItem="2Hg-e7-lb3" firstAttribute="leading" secondItem="c94-iU-wFt" secondAttribute="leading" constant="16" id="4hO-Yh-hkG"/>
-                                                <constraint firstItem="QPe-K4-m8h" firstAttribute="top" secondItem="2Hg-e7-lb3" secondAttribute="top" id="K81-SH-ydp"/>
-                                                <constraint firstItem="2Hg-e7-lb3" firstAttribute="trailing" secondItem="QPe-K4-m8h" secondAttribute="trailing" id="MMV-pf-kFv"/>
                                                 <constraint firstItem="2Hg-e7-lb3" firstAttribute="bottom" secondItem="oni-ZR-iBR" secondAttribute="bottom" constant="8" id="Nfa-nt-B9n"/>
                                                 <constraint firstItem="2Hg-e7-lb3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oni-ZR-iBR" secondAttribute="trailing" constant="8" id="P4E-zo-5cu"/>
                                                 <constraint firstItem="2Hg-e7-lb3" firstAttribute="top" secondItem="c94-iU-wFt" secondAttribute="top" constant="4" id="SX9-DQ-QgG"/>
+                                                <constraint firstItem="QPe-K4-m8h" firstAttribute="top" secondItem="2Hg-e7-lb3" secondAttribute="top" id="XOq-Vo-BAh"/>
                                                 <constraint firstItem="oni-ZR-iBR" firstAttribute="leading" secondItem="2Hg-e7-lb3" secondAttribute="leading" constant="8" id="XhY-I5-Kse"/>
-                                                <constraint firstItem="QPe-K4-m8h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c94-iU-wFt" secondAttribute="leading" constant="20" symbolic="YES" id="lK3-KS-29h"/>
+                                                <constraint firstAttribute="trailing" secondItem="QPe-K4-m8h" secondAttribute="trailing" constant="16" id="a5I-76-x2q"/>
+                                                <constraint firstItem="QPe-K4-m8h" firstAttribute="top" secondItem="2Hg-e7-lb3" secondAttribute="top" id="jDI-NB-GwT"/>
                                                 <constraint firstAttribute="bottom" secondItem="2Hg-e7-lb3" secondAttribute="bottom" constant="4" id="tzg-23-3hN"/>
+                                                <constraint firstItem="2Hg-e7-lb3" firstAttribute="trailing" secondItem="QPe-K4-m8h" secondAttribute="trailing" id="v65-u3-hRx"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.1333333333" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
