@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -108,8 +107,59 @@
                     <view key="view" contentMode="scaleToFill" id="lMo-18-bHq">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="50k-9g-nzj" userLabel="Avatar Image Label">
+                                <rect key="frame" x="16" y="79" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="E8A-rj-lDd"/>
+                                    <constraint firstAttribute="width" constant="70" id="YV7-dR-gAf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Екатерина Новикова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5C-N3-BjZ" userLabel="Name label">
+                                <rect key="frame" x="16" y="157" width="358" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap4-gy-f5z" userLabel="Logout Button">
+                                <rect key="frame" x="350" y="102" width="24" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="3sR-i5-bXt"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="logout_button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ekaterina_nov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfI-qr-DN4" userLabel="Login Name Label">
+                                <rect key="frame" x="16" y="193" width="358" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.68235294117647061" green="0.68627450980392157" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6l3-2N-1ja" userLabel="Description Label">
+                                <rect key="frame" x="16" y="218" width="358" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="s6p-gK-5a9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ap4-gy-f5z" firstAttribute="top" secondItem="s6p-gK-5a9" secondAttribute="top" constant="55" id="Cg0-EK-Ox2"/>
+                            <constraint firstItem="6l3-2N-1ja" firstAttribute="top" secondItem="cfI-qr-DN4" secondAttribute="bottom" constant="8" id="D9g-B5-b0f"/>
+                            <constraint firstItem="s6p-gK-5a9" firstAttribute="trailing" secondItem="d5C-N3-BjZ" secondAttribute="trailing" constant="16" id="Ko3-gB-H6f"/>
+                            <constraint firstItem="6l3-2N-1ja" firstAttribute="leading" secondItem="s6p-gK-5a9" secondAttribute="leading" constant="16" id="M8v-jY-XZ3"/>
+                            <constraint firstItem="s6p-gK-5a9" firstAttribute="trailing" secondItem="cfI-qr-DN4" secondAttribute="trailing" constant="16" id="PRC-De-p5u"/>
+                            <constraint firstItem="s6p-gK-5a9" firstAttribute="trailing" secondItem="6l3-2N-1ja" secondAttribute="trailing" constant="16" id="VCS-CV-uqb"/>
+                            <constraint firstItem="50k-9g-nzj" firstAttribute="top" secondItem="s6p-gK-5a9" secondAttribute="top" constant="32" id="Yla-7a-2NQ"/>
+                            <constraint firstItem="d5C-N3-BjZ" firstAttribute="leading" secondItem="s6p-gK-5a9" secondAttribute="leading" constant="16" id="YxY-9U-Ek7"/>
+                            <constraint firstItem="50k-9g-nzj" firstAttribute="leading" secondItem="s6p-gK-5a9" secondAttribute="leading" constant="16" id="Zbb-34-mvP"/>
+                            <constraint firstItem="cfI-qr-DN4" firstAttribute="leading" secondItem="s6p-gK-5a9" secondAttribute="leading" constant="16" id="crC-9J-bKp"/>
+                            <constraint firstItem="Ap4-gy-f5z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="50k-9g-nzj" secondAttribute="trailing" id="kxh-UP-w6l"/>
+                            <constraint firstItem="s6p-gK-5a9" firstAttribute="trailing" secondItem="Ap4-gy-f5z" secondAttribute="trailing" constant="16" id="m6X-8d-mx1"/>
+                            <constraint firstItem="cfI-qr-DN4" firstAttribute="top" secondItem="d5C-N3-BjZ" secondAttribute="bottom" constant="8" id="rXd-0Y-4LM"/>
+                            <constraint firstItem="d5C-N3-BjZ" firstAttribute="top" secondItem="50k-9g-nzj" secondAttribute="bottom" constant="8" id="xkd-fs-5ER"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyn-W0-k5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -119,9 +169,8 @@
     </scenes>
     <resources>
         <image name="0" width="200" height="132"/>
+        <image name="avatar" width="70" height="70"/>
         <image name="like_button_on" width="30" height="27.333333969116211"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="logout_button" width="20" height="22"/>
     </resources>
 </document>
