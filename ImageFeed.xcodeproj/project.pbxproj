@@ -63,6 +63,7 @@
 				C608D6662A0D8FFF00D98C5D /* AppDelegate.swift */,
 				C608D6682A0D8FFF00D98C5D /* SceneDelegate.swift */,
 				C608D66C2A0D8FFF00D98C5D /* Main.storyboard */,
+				C6B673A62A23EF75000F1001 /* Profile */,
 				C6A953FA2A10242C006470BD /* ImagesList */,
 				C608D66F2A0D900000D98C5D /* Assets.xcassets */,
 				C608D6712A0D900000D98C5D /* LaunchScreen.storyboard */,
@@ -75,10 +76,17 @@
 			isa = PBXGroup;
 			children = (
 				C608D66A2A0D8FFF00D98C5D /* ImagesListViewController.swift */,
-				C6B6739C2A1D6F03000F1001 /* ProfileNewConroller.swift */,
 				C6A953F82A102362006470BD /* ImagesListCell.swift */,
 			);
 			path = ImagesList;
+			sourceTree = "<group>";
+		};
+		C6B673A62A23EF75000F1001 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C6B6739C2A1D6F03000F1001 /* ProfileNewConroller.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

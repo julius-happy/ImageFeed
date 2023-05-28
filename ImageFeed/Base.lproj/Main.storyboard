@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="41.53846153846154" y="-2.1327014218009479"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="X7z-vH-M4P">
             <objects>
-                <viewController id="90K-8l-Olv" sceneMemberID="viewController">
+                <viewController id="90K-8l-Olv" customClass="ProfileViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lMo-18-bHq">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,6 +128,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="logout_button"/>
+                                <connections>
+                                    <action selector="didTapLogoutButton" destination="90K-8l-Olv" eventType="touchUpInside" id="AIZ-Vz-YG0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ekaterina_nov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfI-qr-DN4" userLabel="Login Name Label">
                                 <rect key="frame" x="16" y="193" width="358" height="17"/>
@@ -161,6 +164,13 @@
                             <constraint firstItem="d5C-N3-BjZ" firstAttribute="top" secondItem="50k-9g-nzj" secondAttribute="bottom" constant="8" id="xkd-fs-5ER"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="50k-9g-nzj" id="HyW-P8-IS1"/>
+                        <outlet property="descriptionLabel" destination="6l3-2N-1ja" id="vdr-9L-PlO"/>
+                        <outlet property="loginNameLabel" destination="cfI-qr-DN4" id="7Zg-CK-oQM"/>
+                        <outlet property="logoutButton" destination="Ap4-gy-f5z" id="3Qb-Wd-1cZ"/>
+                        <outlet property="nameLabel" destination="d5C-N3-BjZ" id="cwK-Zi-sm8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyn-W0-k5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
