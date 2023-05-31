@@ -101,6 +101,36 @@
             </objects>
             <point key="canvasLocation" x="1673.8461538461538" y="-712.32227488151659"/>
         </scene>
+        <!--Single Image View Controller-->
+        <scene sceneID="tZZ-zI-uHm">
+            <objects>
+                <viewController id="Tmp-4q-LeX" customClass="SingleImageViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m0g-zb-HbR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="grj-dC-c6I">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cqg-9k-coL"/>
+                        <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cqg-9k-coL" firstAttribute="bottom" secondItem="grj-dC-c6I" secondAttribute="bottom" id="0t8-0Z-t1F"/>
+                            <constraint firstItem="cqg-9k-coL" firstAttribute="trailing" secondItem="grj-dC-c6I" secondAttribute="trailing" id="7Fk-J6-9JD"/>
+                            <constraint firstItem="grj-dC-c6I" firstAttribute="top" secondItem="cqg-9k-coL" secondAttribute="top" id="MBy-Cw-Mj4"/>
+                            <constraint firstItem="grj-dC-c6I" firstAttribute="leading" secondItem="cqg-9k-coL" secondAttribute="leading" id="Tru-Xl-xdY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="grj-dC-c6I" id="Y6E-NJ-hXz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Jo-3t-HhB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="-2"/>
+        </scene>
         <!--Profile View Controller-->
         <scene sceneID="X7z-vH-M4P">
             <objects>

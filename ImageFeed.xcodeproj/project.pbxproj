@@ -15,6 +15,7 @@
 		C608D6732A0D900000D98C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C608D6712A0D900000D98C5D /* LaunchScreen.storyboard */; };
 		C6A953F92A102362006470BD /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A953F82A102362006470BD /* ImagesListCell.swift */; };
 		C6B6739D2A1D6F03000F1001 /* ProfileNewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6739C2A1D6F03000F1001 /* ProfileNewConroller.swift */; };
+		C6B673A82A27EFB4000F1001 /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B673A72A27EFB4000F1001 /* SingleImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C608D6742A0D900000D98C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6A953F82A102362006470BD /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
 		C6B6739C2A1D6F03000F1001 /* ProfileNewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNewConroller.swift; sourceTree = "<group>"; };
+		C6B673A72A27EFB4000F1001 /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C608D6662A0D8FFF00D98C5D /* AppDelegate.swift */,
 				C608D6682A0D8FFF00D98C5D /* SceneDelegate.swift */,
 				C608D66C2A0D8FFF00D98C5D /* Main.storyboard */,
+				C6B673A92A27F3BF000F1001 /* SingleImageViewController */,
 				C6B673A62A23EF75000F1001 /* Profile */,
 				C6A953FA2A10242C006470BD /* ImagesList */,
 				C608D66F2A0D900000D98C5D /* Assets.xcassets */,
@@ -87,6 +90,14 @@
 				C6B6739C2A1D6F03000F1001 /* ProfileNewConroller.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		C6B673A92A27F3BF000F1001 /* SingleImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C6B673A72A27EFB4000F1001 /* SingleImageViewController.swift */,
+			);
+			path = SingleImageViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				C608D66B2A0D8FFF00D98C5D /* ImagesListViewController.swift in Sources */,
 				C6A953F92A102362006470BD /* ImagesListCell.swift in Sources */,
 				C608D6672A0D8FFF00D98C5D /* AppDelegate.swift in Sources */,
+				C6B673A82A27EFB4000F1001 /* SingleImageViewController.swift in Sources */,
 				C608D6692A0D8FFF00D98C5D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
