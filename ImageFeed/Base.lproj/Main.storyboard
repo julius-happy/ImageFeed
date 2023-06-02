@@ -95,6 +95,7 @@
                     <navigationItem key="navigationItem" id="y5e-zj-cMn"/>
                     <connections>
                         <outlet property="tableView" destination="QlK-1a-5GN" id="Qro-BS-bv7"/>
+                        <segue destination="Tmp-4q-LeX" kind="show" identifier="ShowSingleImage" id="XIa-De-95D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="grj-dC-c6I">
-                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
@@ -123,13 +124,14 @@
                             <constraint firstItem="grj-dC-c6I" firstAttribute="leading" secondItem="cqg-9k-coL" secondAttribute="leading" id="Tru-Xl-xdY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qMm-yE-MBx"/>
                     <connections>
                         <outlet property="imageView" destination="grj-dC-c6I" id="Y6E-NJ-hXz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jo-3t-HhB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="-2"/>
+            <point key="canvasLocation" x="2595" y="-712"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="X7z-vH-M4P">
